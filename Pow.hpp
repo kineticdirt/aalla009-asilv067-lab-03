@@ -15,10 +15,10 @@ class Pow : public Base {
 		}
 
 		virtual double evaluate() { 
-			if(value2->evaluate() == 0){
+			if(value2->evaluate() == 0.0){
 				return 1;
-			} else if(value2->evaluate() % 2==0){
-				return evaluate(value1->evalutate(), (value2->evaluate())/2) * evaluate(value1_>evaluate(), (value2->evaluate())/2);
+			} else if(value2->evaluate() % 2.0 == 0.0){
+				return evaluate(value1->evalutate(), (value2->evaluate())/2) * evaluate(value1->evaluate(), (value2->evaluate())/2);
 			} else {
 				return value1 * evaluate(value1->evaluate(), (value2->evaluate())/2) * evaluate(value1->evaluate(), (value2->evaluate())/2);
 			}
