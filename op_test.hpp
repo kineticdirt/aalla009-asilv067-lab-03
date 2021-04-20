@@ -40,7 +40,7 @@ TEST(SubTest, SubEvaluatePositive) { //sub +
 
 TEST(SubTest, SUbEvaluateNegative) { //sub -
 	Base* num1 = new Op(8.0);
-	Base* num2 = new Op(3.0);
+	Base* num2 = new Op(-3.0);
 	
     Sub* test = new Sub(num1, num2);
     EXPECT_DOUBLE_EQ(test->evaluate(), 11.0);
