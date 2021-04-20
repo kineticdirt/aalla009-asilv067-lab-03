@@ -23,6 +23,6 @@ class Pow : public Base {
 				return value1 * evaluate(value1, value2/2) * evaluate(value1, value2/2);
 			}
 		}
-		virtual std:string stringify() {return "(" + value1->stringify() + "**" + value2->stringify() + ")}
+		virtual std:string stringify() {return "(" + value1->stringify() + "**" + value2->stringify() + ")";}//added the"; atthe end
 };
 
