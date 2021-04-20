@@ -4,6 +4,7 @@
 #include "base.hpp"
 #include "op.hpp"
 #include <string>
+#include <cmath>
 
 class Pow : public Base {
 	private:
