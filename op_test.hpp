@@ -73,7 +73,7 @@ TEST(DivTest, DivEvaluateDecimal) { //Div .5
     EXPECT_DOUBLE_EQ(test->evaluate(), 16.0);
 }
 TEST(PowTest, PowEvaluatePostive) { //Pow +
-	Base* num1 = new Op(8.0);
+	Base* num1 = new Op(4.0);
 	Base* num2 = new Op(3.0);
     Pow* test = new Pow(num1, num2);
     EXPECT_DOUBLE_EQ(test->evaluate(), 64.0);
