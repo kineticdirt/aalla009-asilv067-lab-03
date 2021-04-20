@@ -17,30 +17,30 @@ TEST(OpTest, OpEvaluateNonZero) {
 }
 
 TEST(AddTest, AddEvaluatePositive) {  //add +	
-	Op* num1 = new Op(8.0);
-	Op* num2 = new Op(4.0);
+	//Op* num1 = new Op(8.0);
+	//Op* num2 = new Op(4.0);
 	
     Add* test = new Add(8.0, 4.0);
     EXPECT_DOUBLE_EQ(test->evaluate(), 12.0);
 }
 
 TEST(AddTest, OpEvaluateNegative) { //add -
-	Op* num1 = new Op(8.0);
-	Op* num2 = new Op(-4.0);
+	//Op* num1 = new Op(8.0);
+	//Op* num2 = new Op(-4.0);
     Add* test = new Add(8.0, -4.0);
     EXPECT_DOUBLE_EQ(test->evaluate(), 4.0);
 }
 
 TEST(SubTest, SubEvaluatePositive) { //sub +
-	Op* num1 = new Op(8.0);
-	Op* num2 = new Op(4.0);
+	//Op* num1 = new Op(8.0);
+	//Op* num2 = new Op(4.0);
     Sub* test = new Sub(8.0, 4.0);
     EXPECT_DOUBLE_EQ(test->evaluate(), 4.0);
 }
 
 TEST(SubTest, SUbEvaluateNegative) { //sub -
-	Op* num1 = new Op(8.0);
-	Op* num2 = new Op(3.0);
+	//Op* num1 = new Op(8.0);
+	//Op* num2 = new Op(3.0);
 	
     Sub* test = new Sub(8.0, 3.0);
     EXPECT_DOUBLE_EQ(test->evaluate(), 11.0);
