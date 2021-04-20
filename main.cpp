@@ -8,7 +8,7 @@
 //#include "Min.hpp"
 #include "op.hpp"
 #include "Div.hpp"
-#include "Rand.hp"
+#include "Rand.hpp"
 int main() {
     Base* three = new Op(3);
     Base* seven = new Op(7);
