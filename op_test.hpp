@@ -27,7 +27,7 @@ TEST(AddTest, AddEvaluatePositive) {  //add +
 TEST(AddTest, OpEvaluateNegative) { //add -
 	Op* num1 = new Op(8.0);
 	Op* num2 = new Op(-4.0);
-    Add* test = new Op(num1, num2);
+    Add* test = new Add(num1, num2);
     EXPECT_DOUBLE_EQ(test->evaluate(), 4.0);
 }
 
