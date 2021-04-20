@@ -62,4 +62,8 @@ TEST(RandTest, RandEvaluateNumber) { //rand
     EXPECT_EQ(test->evaluate(), 8);
 }
 
+TEST(RandTest, RandEvaluateNonZero) {
+	Rand* test = new Rand();
+	EXPECT_TRUE( (test->evaluate() >= 0) && (test->evaluate() <= 100));
+}
 #endif //__OP_TEST_HPP__
