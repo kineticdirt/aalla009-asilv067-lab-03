@@ -6,7 +6,7 @@
 class Op : public Base {
 
 	private:
-		int value;
+		double value;
 	
 	public:
         	Op(double value) : Base() { this->value = value; }
