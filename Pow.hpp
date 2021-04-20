@@ -18,9 +18,9 @@ class Pow : public Base {
 			if(value2->evaluate() == 0.0){
 				return 1;
 			} else if(value2->evaluate() % 2.0 == 0.0){
-				return evaluate(value1->evaluate(), (value2->evaluate()/2) * evaluate(value1->evaluate(), (value2->evaluate()/2));
+				return (evaluate(value1->evaluate(), (value2->evaluate()/2) * evaluate(value1->evaluate(), (value2->evaluate())/2));
 			} else {
-				return value1 * evaluate(value1->evaluate(), (value2->evaluate()/2)) * evaluate(value1->evaluate(), (value2->evaluate()/2));
+				return (value1 * evaluate(value1->evaluate(), (value2->evaluate())/2) * evaluate(value1->evaluate(), (value2->evaluate())/2));
 			}
 		}
 		virtual std:string stringify() {return "(" + value1->stringify() + "**" + value2->stringify() + ")";}//added the"; atthe end
