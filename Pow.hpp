@@ -6,10 +6,10 @@
 
 class Pow : public Base {
 	private:
-		Base* value1;
-		Base* value2;
+		double value1;
+		double value2;
 	public:
-		Pow(Base* val1, Base* val2) : Base() { 
+		Pow(double val1, double val2) : Base() { 
 			value1 = val1;
 			value2 = val2;
 		}
@@ -18,9 +18,9 @@ class Pow : public Base {
 			if(value2->evaluate() == 0.0){
 				return 1;
 			} else if(value2->evaluate() % 2.0 == 0.0){
-				return evaluate(value1->evaluate(), (value2->evaluate()/2) * evaluate(value1->evaluate(), (value2->evaluate()/2);
+				return evaluate(value1, (value2/2) * evaluate(value1, (value2/2);
 			} else {
-				return value1 * evaluate(value1->evaluate(), (value2->evaluate()/2) * evaluate(value1->evaluate(), (value2->evaluate()/2);
+				return value1 * evaluate(value1, (value2/2)) * evaluate(value1), (value2/2));
 			}
 		}
 		virtual std:string stringify() {return "(" + value1->stringify() + "**" + value2->stringify() + ")";}//added the"; atthe end
