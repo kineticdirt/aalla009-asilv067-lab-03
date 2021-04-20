@@ -8,7 +8,7 @@
 #include "Min.hpp"
 #include "Op.hpp"
 #include "Div.hpp"
-
+#include "Rand.cpp "//added rand
 int main() {
     Base* three = new Op(3);
     Base* seven = new Op(7);
