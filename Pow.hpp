@@ -26,3 +26,4 @@ class Pow : public Base {
 		virtual std:string stringify() {return "(" + value1->stringify() + "**" + value2->stringify() + ")";}//added the"; atthe end
 };
 
+#endif 
