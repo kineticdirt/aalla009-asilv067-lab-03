@@ -25,3 +25,4 @@ class Add : public Base {
                 }
 };
 
+#endif //__ADD_HPP__
