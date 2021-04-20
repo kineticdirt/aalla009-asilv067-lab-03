@@ -13,3 +13,4 @@ class Mult : public Base {
                 virtual std::string stringify() { return "(" + value1->stringify() + "*" + value2->stringify() + ")"; }
 };
 
+#endif //__MULT_HPP__
