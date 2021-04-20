@@ -6,10 +6,10 @@
 
 class Mult : public Base {
         private:
-        	Op* value1;
-                Op* value2;
+        	Base* value1;
+                Base* value2;
         public:
-                Mult(Op* val1, Op* val2) : Base() { value1 = val1; value2 = val2;}
+                Mult(Base* val1, Base* val2) : Base() { value1 = val1; value2 = val2;}
                 virtual double evaluate() { return (value1->evaluate()) * (value2->evaluate());}
                 virtual std::string stringify() { return "(" + value1->stringify() + "*" + value2->stringify() + ")"; }
 };
