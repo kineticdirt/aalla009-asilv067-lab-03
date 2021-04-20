@@ -30,7 +30,7 @@ class Pow : public Base {
 			} else if((int)(val2) % 2 == 0){
 				return evaluate(val1, val2/2) * evaluate(val1, val2/2);
 			} else {
-				return value1 * evaluate(val1, val2/2) * evaluate(value1, value2/2);
+				return val1 * evaluate(val1, val2/2) * evaluate(val1, val2/2);
 			}
 		}
 		virtual std::string stringify() {return "(" + value1->stringify() + "**" + value2->stringify() + ")";}//added the"; atthe end
