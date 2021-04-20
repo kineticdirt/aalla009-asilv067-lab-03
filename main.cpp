@@ -5,10 +5,10 @@
 #include "Add.hpp"
 #include "Sub.hpp"
 #include "Pow.hpp"
-#include "Min.hpp"
-#include "Op.hpp"
+//#include "Min.hpp"
+#include "op.hpp"
 #include "Div.hpp"
-#include "Rand.cpp "//added rand
+#include "Rand.hp"
 int main() {
     Base* three = new Op(3);
     Base* seven = new Op(7);
