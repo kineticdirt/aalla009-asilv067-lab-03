@@ -19,9 +19,9 @@ class Pow : public Base {
 			if(value2->evaluate() == 0.0){
 				return 1;
 			} else if((int)(value2->evaluate()) % 2 == 0){
-				return evaluate(value1->evaluate(), (value2->evaluate()/2) * evaluate(value1->evaluate(), (value2->evaluate())/2);
+				return evaluate(value1->evaluate(), value2->evaluate()/2) * evaluate(value1->evaluate(), value2->evaluate()/2);
 			} else {
-				return value1 * evaluate(value1->evaluate(), (value2->evaluate())/2) * evaluate(value1->evaluate(), (value2->evaluate())/2);
+				return value1 * evaluate(value1->evaluate(), value2->evaluate()/2) * evaluate(value1->evaluate(), value2->evaluate()/2);
 			}
 		}
 		double evaluate(double val1, double val2){
