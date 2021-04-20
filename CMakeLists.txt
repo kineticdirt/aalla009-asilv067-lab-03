@@ -1,7 +1,16 @@
-cmake_minimum_required(VERSION 3.10)
-
-SET_SUBDIRECTORY(googletest)
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 
 SET(CMAKE_CXX_STANDARD 11)
 
-ADD_EXECUTABLE(main.cpp)
+ADD_SUBDIRECTORY(googletest)
+
+ADD_EXECUTABLE(test
+	unit_test.cpp
+)
+
+ADD_EXECUTABLE(lab
+	main.cpp
+) 
+
+TARGET_LINK_LIBRARIES(test gtest)
+TARGET_COMPILE_DEFINITIONS(test PRIVATE gtest_disable_pthreads=ON)
